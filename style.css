@@ -1,0 +1,138 @@
+@import 'reset.css';
+/*---------------------*/
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    font-family: 'Pacifico', cursive;
+    font-size: 2em;
+    color: #f53f1f
+}
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/22/19/03/beach-1850059_1280.jpg");    
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    font-family: 'Merienda', cursive;
+}
+
+.message{
+    display: none;
+    font-size: 3em;
+    font-weight:  bolder;
+    text-align: center;
+    padding-top: 10%;
+}
+
+li{
+    list-style-type: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 2em;
+}
+
+.col3{
+    color: #7158e2;
+    margin: 0 auto;
+    text-align: center;
+    width: 26%; 
+    float: left;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 15px;
+    font-size: 18px;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+.col3:hover { border: 3px solid #2c09f3}
+.l1{background-color: #33d9b2}
+.l2{background-color: #706fd3}
+.l3{background-color: #fffa65}
+
+em {
+    font-size: 1.5em
+}
+
+img{
+    display: block;
+    text-align: center;
+    border: 2px solid#dcf0f1;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*------------- media query ------------*/
+
+@media (min-width: 1400px) {
+    h1::after{content: 1400px}
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    h1::after{content: 1200px}
+    .l1{background-color: #55E6C1}
+    .l2{
+        background-color: #e67e22;
+        color: #f7f1e3;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+    h1::after{content: 1000px}
+    h3 {font-size: 1.5em}
+    .l1{background-color: #ddf3a1}
+    .l2{background-color: #a0fa39}
+
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+    h3::after{ content: 400px}
+    .l2{background-color: #f8c0e3}
+}
+
+@media (min-width: 550px) and (max-width: 800px) {
+    h1::after{content: 500px}
+    h3{font-size: 1.3em}
+    .l1{background-color: #f6fcf8}
+    .l2{background-color: #c4c4c4}
+    
+    .col3 {
+        width: 65%;
+        float: none;
+        margin: 15px auto;
+        padding: 15px;
+        padding-top: 15px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 550px) {
+    h3{font-size: 1.3em}
+    .l1{background-color: #c4c4c4}
+    .l2{background-color: #33d9b2}
+    .col3 {
+        width: 80%;
+        float: none;
+        margin: 15px auto;
+        padding: 15px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {display: none;}
+    .message {display: block}
+}
+
+footer{
+    display: block;
+    clear: both;
+    color: #f7f1e3;
+    text-align: center;
+    font-family: fantasy;
+}
